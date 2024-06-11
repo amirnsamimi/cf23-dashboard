@@ -1,3 +1,14 @@
+@keyframes infinite-rotation{
+
+0% {
+    transform: rotate(0) ;
+}
+100% {
+    transform: rotate(360deg);
+};
+
+}
+
 :root {
   --safe-width: 1280px;
 
@@ -184,14 +195,42 @@ button:hover {
     line-clamp: 1;
     max-lines: 1;
     width: 85%;
-
  
 }
+
+
+/*  Quote Card */
+
+.quote-card {
+    row-gap: 29px;
+}
+
+.quote-card p{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--white);
+    opacity: 0.8;
+    line-height: 32px;
+}
+
+.quote-card span{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.quote-card p::before, .quote-card p::after{
+content: '"';
+}
+
 /* misc */
 
 #degree{
     font-size: 28px;
     line-height: 36px;
+}
+
+#sun{
+    animation: infinite-rotation 20s infinite ;
 }
 
 @media screen and (max-width: 435px) {
