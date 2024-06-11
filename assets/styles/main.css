@@ -85,10 +85,6 @@ body {
   display: grid;
 }
 
-.hidden {
-  display: none;
-}
-
 .container {
   width: 100%;
   margin: 0 auto;
@@ -130,7 +126,7 @@ section span.subtitle {
 
 button {
   background-color: transparent;
-  color: var(--Iridium);
+  color: var(--Baltic-Sea);
   font-size: 16px;
   border: none;
   outline: none;
@@ -143,13 +139,13 @@ button {
 }
 
 button.active {
-  background-color: var(--Iridium);
+  background-color: var(--Baltic-Sea);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 0 2px rgba(0, 0, 0, 0.12);
   color: var(--white);
 }
 
 button:hover {
-  background-color: var(--Iridium);
+  background-color: var(--Baltic-Sea);
   color: var(--white);
 }
 
@@ -242,6 +238,50 @@ li h3 {
   border-radius: 8px;
 }
 
+/* doom-card */
+
+.doom-card{
+    display: none;
+    
+}
+
+.doom-card img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.doom-card ul {
+    display: flex;
+    padding-bottom: 16px;
+    gap:10px;
+}
+
+.doom-bannerContainer{
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.doom-bannerContainer img{
+    border-radius: 8px;
+}
+
+.doom-bannerContainer p{
+position: absolute;
+bottom: 16px;
+padding: 16px;
+background-color: rgba(0,0,0,0.4);
+backdrop-filter: blur(24px);
+width: calc(100% - 32px);
+font-size: 20px;
+font-weight: 200;
+line-height: 26px;
+border-radius: 8px;
+
+
+
+}
 /* misc */
 
 #degree {
@@ -253,8 +293,12 @@ li h3 {
   animation: infinite-rotation 20s infinite;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 768px) {
 }
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 768px) {
+    .doom-card{
+        display: block;
+    }
+
 }
