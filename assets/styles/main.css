@@ -176,20 +176,21 @@ li h3 {
 .email-card ul li {
   border-bottom: 1px solid var(--Baltic-Sea);
   padding: 7px 0;
+  width: 100%;
+
 }
 .email-card ul li div:last-child {
   padding: 6px 12px;
-  width: 100%;
   justify-content: flex-start;
+  width: calc(100% - 40px);
+  
 }
 
 .email-card ul li div h3 {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  line-clamp: 1;
-  max-lines: 1;
-  width: 85%;
+    width: 100%;
 }
 
 /*  Quote Card */
@@ -252,10 +253,7 @@ li h3 {
   animation: infinite-rotation 20s infinite;
 }
 
-@media screen and (max-width: 435px) {
-}
-
-@media screen and (min-width: 435px) and (max-width: 770px) {
+@media screen and (max-width: 770px) {
 }
 
 @media screen and (min-width: 770px) {
