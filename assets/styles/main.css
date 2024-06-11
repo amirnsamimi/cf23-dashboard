@@ -29,29 +29,6 @@ html {
 
 body {
   background-color: var(--Baltic-Sea);
- 
-}
-
-.p-16 {
-  padding: 16px;
-}
-.py-16 {
-  padding: 16px 0;
-}
-.px-16 {
-  padding: 0 16px;
-}
-
-.w-full {
-  width: 100%;
-}
-
-.h-full {
-  height: 100%;
-}
-
-.gap-6 {
-  gap: 6px;
 }
 
 .rgap-6 {
@@ -98,16 +75,16 @@ h1 {
 
 main {
   display: grid;
-    gap:16px;
+  gap: 16px;
   max-width: var(--safe-width);
   margin: 0 auto;
-  padding:16px;
+  padding: 16px;
 }
 
-.container{
-    display: flex;
-    gap: 16px;
-    flex-direction: column;
+.container {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
 }
 
 /* cards */
@@ -184,20 +161,18 @@ li h3 {
   border-bottom: 1px solid var(--Baltic-Sea);
   padding: 7px 0;
   width: 100%;
-
 }
 .email-card ul li div:last-child {
   padding: 6px 12px;
   justify-content: flex-start;
   width: calc(100% - 40px);
-  
 }
 
 .email-card ul li div h3 {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-    width: 100%;
+  width: 100%;
 }
 
 /*  Quote Card */
@@ -227,9 +202,9 @@ li h3 {
 /* feeling card */
 
 .feeling-card {
-    display: flex;
-    gap:16px;
-    flex-direction: column;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
 }
 
 .feeling-cardContainer {
@@ -251,51 +226,48 @@ li h3 {
 
 /* doom-card */
 
-.doom-card{
-    display: none;
-    
+.doom-card {
+  display: none;
 }
 
-.doom-card img{
-    width: 100%;
-    object-fit: cover;
+.doom-card img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .doom-card ul {
-    display: flex;
-    padding-bottom: 16px;
-    gap:10px;
+  display: flex;
+  padding-bottom: 16px;
+  gap: 10px;
 }
 
-.doom-bannerContainer{
-    
-    position: relative;
-    display: flex;
-    justify-content: center;
+.doom-bannerContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
-.doom-bannerContainer img{
-    border-radius: 8px;
+.doom-bannerContainer img {
+  border-radius: 8px;
 }
 
-.doom-bannerContainer p{
-position: absolute;
-bottom: 16px;
-padding: 16px;
-background-color: rgba(0,0,0,0.4);
-backdrop-filter: blur(24px);
-width: calc(100% - 32px);
-font-size: 20px;
-font-weight: 200;
-line-height: 26px;
-border-radius: 8px;
-
+.doom-bannerContainer p {
+  position: absolute;
+  bottom: 16px;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(24px);
+  width: calc(100% - 32px);
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 26px;
+  border-radius: 8px;
 }
 
-.multirow-cards{
-    display: grid;
-    gap:16px;
-  
+.multirow-cards {
+  display: flex;
+  gap: 16px;
+  flex-direction: column-reverse;
 }
 /* misc */
 
@@ -308,29 +280,22 @@ border-radius: 8px;
   animation: infinite-rotation 20s infinite;
 }
 
-
 @media screen and (min-width: 768px) {
+  main {
+    display: flex;
+    gap: 16px;
+  }
 
-    main{
-        display: flex;
-        gap: 16px;
-       
-    }
+  main .container:first-child {
+    width: 32%;
+  }
 
-    main .container:first-child{
-        width: 32%;
-    }
-
-    .doom-card{
-        display: block;
-    }
-    .multirow-cards{
-        display: flex;
-        gap:16px;
-      
-    }
-
-
-    
-
+  .doom-card {
+    display: block;
+  }
+  .multirow-cards {
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
+  }
 }
