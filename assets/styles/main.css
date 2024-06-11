@@ -159,12 +159,34 @@ button:hover {
     padding: 4px 12px;
 }
 
-.date-card li h3{
+ li h3{
     line-height: 22px;
     font-size: 16px;
 }
 
 
+/* email-card */
+
+.email-card ul li{
+    border-bottom: 1px solid var(--Baltic-Sea);
+    padding: 7px 0;
+}
+.email-card ul li div:last-child{
+    padding: 6px 12px;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.email-card ul li div h3{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    line-clamp: 1;
+    max-lines: 1;
+    width: 85%;
+
+ 
+}
 /* misc */
 
 #degree{
