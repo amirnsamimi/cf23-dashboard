@@ -1,12 +1,10 @@
-@keyframes infinite-rotation{
-
-0% {
-    transform: rotate(0) ;
-}
-100% {
+@keyframes infinite-rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
     transform: rotate(360deg);
-};
-
+  }
 }
 
 :root {
@@ -43,48 +41,48 @@ body {
   padding: 0 16px;
 }
 
-.w-full{
-    width: 100%;
+.w-full {
+  width: 100%;
 }
 
-.h-full{
-    height: 100%;
+.h-full {
+  height: 100%;
 }
 
-.gap-6{
-    gap:6px;
+.gap-6 {
+  gap: 6px;
 }
 
-.rgap-6{
-    row-gap: 6px;
+.rgap-6 {
+  row-gap: 6px;
 }
 
-.rgap-16{
-    row-gap: 16px;
+.rgap-16 {
+  row-gap: 16px;
 }
 
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 }
 
-.justify-between{
-    justify-content: space-between;
+.justify-between {
+  justify-content: space-between;
 }
 
-.column{
-    flex-direction: column;
+.column {
+  flex-direction: column;
 }
 
-.column-r{
-    flex-direction: column-reverse;
+.column-r {
+  flex-direction: column-reverse;
 }
 
-.items-center{
-    align-items: center;
+.items-center {
+  align-items: center;
 }
 
-.grid{
-    display: grid;
+.grid {
+  display: grid;
 }
 
 .hidden {
@@ -98,7 +96,7 @@ body {
 
 h1 {
   font-size: 1.75rem;
-  line-height: 36px ;
+  line-height: 36px;
 }
 
 main {
@@ -117,7 +115,7 @@ main {
 
 .card .title {
   font-size: 1.5rem;
-  line-height: 32px ;
+  line-height: 32px;
 }
 
 .card p.subtitle,
@@ -155,82 +153,103 @@ button:hover {
   color: var(--white);
 }
 
-
 /* date-card */
 
-
-.date-card li:first-child{
-    border-left: 2px solid var(--safron-mango);
+.date-card li:first-child {
+  border-left: 2px solid var(--safron-mango);
 }
-.date-card li:last-child{
-    border-left: 2px solid var(--aqua-green);
-}
-
-.date-card li{
-    padding: 4px 12px;
+.date-card li:last-child {
+  border-left: 2px solid var(--aqua-green);
 }
 
- li h3{
-    line-height: 22px;
-    font-size: 16px;
+.date-card li {
+  padding: 4px 12px;
 }
 
+li h3 {
+  line-height: 22px;
+  font-size: 16px;
+}
 
 /* email-card */
 
-.email-card ul li{
-    border-bottom: 1px solid var(--Baltic-Sea);
-    padding: 7px 0;
+.email-card ul li {
+  border-bottom: 1px solid var(--Baltic-Sea);
+  padding: 7px 0;
 }
-.email-card ul li div:last-child{
-    padding: 6px 12px;
-    width: 100%;
-    justify-content: flex-start;
-}
-
-.email-card ul li div h3{
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    line-clamp: 1;
-    max-lines: 1;
-    width: 85%;
- 
+.email-card ul li div:last-child {
+  padding: 6px 12px;
+  width: 100%;
+  justify-content: flex-start;
 }
 
+.email-card ul li div h3 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  line-clamp: 1;
+  max-lines: 1;
+  width: 85%;
+}
 
 /*  Quote Card */
 
 .quote-card {
-    row-gap: 29px;
+  row-gap: 29px;
 }
 
-.quote-card p{
-    font-size: 20px;
-    font-weight: 400;
-    color: var(--white);
-    opacity: 0.8;
-    line-height: 32px;
+.quote-card p {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--white);
+  opacity: 0.8;
+  line-height: 32px;
 }
 
-.quote-card span{
+.quote-card span {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.quote-card p::before,
+.quote-card p::after {
+  content: '"';
+}
+
+/* feeling card */
+
+.feeling-card {
     display: flex;
-    justify-content: flex-end;
+    gap:16px;
+    flex-direction: column;
 }
 
-.quote-card p::before, .quote-card p::after{
-content: '"';
+.feeling-cardContainer {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.feeling-miniCards {
+  flex-grow: 1;
+  flex-basis: 30%;
+  background-color: var(--Baltic-Sea);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
 }
 
 /* misc */
 
-#degree{
-    font-size: 28px;
-    line-height: 36px;
+#degree {
+  font-size: 28px;
+  line-height: 36px;
 }
 
-#sun{
-    animation: infinite-rotation 20s infinite ;
+#sun {
+  animation: infinite-rotation 20s infinite;
 }
 
 @media screen and (max-width: 435px) {
