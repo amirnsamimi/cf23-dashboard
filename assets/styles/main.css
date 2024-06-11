@@ -40,6 +40,18 @@ body {
     height: 100%;
 }
 
+.gap-6{
+    gap:6px;
+}
+
+.rgap-6{
+    row-gap: 6px;
+}
+
+.rgap-16{
+    row-gap: 16px;
+}
+
 .flex{
     display: flex;
 }
@@ -58,6 +70,10 @@ body {
 
 .items-center{
     align-items: center;
+}
+
+.grid{
+    display: grid;
 }
 
 .hidden {
@@ -88,9 +104,9 @@ main {
   border-radius: 16px;
 }
 
-.card :is(h2, h3, h4, h5, h6):first-child {
+.card .title {
   font-size: 1.5rem;
-  line-height: 22px ;
+  line-height: 32px ;
 }
 
 .card p.subtitle,
@@ -126,6 +142,26 @@ button.active {
 button:hover {
   background-color: var(--Iridium);
   color: var(--white);
+}
+
+
+/* date-card */
+
+
+.date-card li:first-child{
+    border-left: 2px solid var(--safron-mango);
+}
+.date-card li:last-child{
+    border-left: 2px solid var(--aqua-green);
+}
+
+.date-card li{
+    padding: 4px 12px;
+}
+
+.date-card li h3{
+    line-height: 22px;
+    font-size: 16px;
 }
 
 
