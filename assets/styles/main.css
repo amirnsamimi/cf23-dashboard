@@ -1,0 +1,27 @@
+:root {
+  --safe-width: 1280px;
+
+  --Iridium: rgba(61, 61, 61, 1);
+  --Baltic-Sea: rgba(41, 41, 41, 1);
+  --white: rgba(255, 255, 255, 1);
+  --safron-mango: rgba(255, 196, 83, 1);
+  --aqua-green: rgba(41, 228, 137, 1);
+}
+
+.p-16 {
+  padding: 16px;
+}
+.py-16 {
+  padding: 16px 0;
+}
+.px-16 {
+  padding: 0 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
