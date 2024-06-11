@@ -29,6 +29,7 @@ html {
 
 body {
   background-color: var(--Baltic-Sea);
+ 
 }
 
 .p-16 {
@@ -96,17 +97,27 @@ h1 {
 }
 
 main {
-  display: block;
+  display: grid;
+    gap:16px;
   max-width: var(--safe-width);
+  margin: 0 auto;
+  padding:16px;
 }
+
+.container{
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
 /* cards */
 
 .card {
   background-color: var(--Iridium);
   color: var(--white);
-  margin: 16px;
   padding: 16px;
   border-radius: 16px;
+  height: max-content;
 }
 
 .card .title {
@@ -279,8 +290,12 @@ font-weight: 200;
 line-height: 26px;
 border-radius: 8px;
 
+}
 
-
+.multirow-cards{
+    display: grid;
+    gap:16px;
+  
 }
 /* misc */
 
@@ -293,12 +308,29 @@ border-radius: 8px;
   animation: infinite-rotation 20s infinite;
 }
 
-@media screen and (max-width: 768px) {
-}
 
 @media screen and (min-width: 768px) {
+
+    main{
+        display: flex;
+        gap: 16px;
+       
+    }
+
+    main .container:first-child{
+        width: 32%;
+    }
+
     .doom-card{
         display: block;
     }
+    .multirow-cards{
+        display: flex;
+        gap:16px;
+      
+    }
+
+
+    
 
 }
