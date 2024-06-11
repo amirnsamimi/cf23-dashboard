@@ -20,8 +20,41 @@
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
   font-family: "Inter", sans-serif;
+}
+
+
+
+/* button style */
+
+
+
+button{
+    background-color: transparent;
+    color: var(--Baltic-Sea);
+    font-size: 16px;
+    border:none;
+    outline: none;
+    transition: 500ms;
+    font-weight: 700;
+    padding: 8px 16px;
+    display: inline-block;
+    text-align: center;
+   border-radius: 4px;
+}
+
+button.active{
+    background-color: var(--Baltic-Sea);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 0 2px rgba(0, 0, 0, 0.12);
+    color: var(--white);
+}
+
+button:hover{
+    background-color: var(--Baltic-Sea);
+    color: var(--white);
 }
