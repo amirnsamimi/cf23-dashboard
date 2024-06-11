@@ -8,6 +8,21 @@
   --aqua-green: rgba(41, 228, 137, 1);
 }
 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    font-family: "Inter", sans-serif;
+  }
+  
+  body{
+      background-color: var(--Baltic-Sea);
+  }
+
+
 .p-16 {
   padding: 16px;
 }
@@ -18,17 +33,45 @@
   padding: 0 16px;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.hidden{
+    display: none;
 }
 
-html {
-  font-family: "Inter", sans-serif;
+.container{
+    width: 100%;
+    margin: 0 auto;
 }
 
 
+
+h1{
+    font-size: 1.75rem;
+}
+
+main{
+    display: block;
+    max-width: var(--safe-width);
+}
+/* cards */
+
+.card{
+    background-color: var(--Iridium);
+    color: var(--white);
+    margin: 16px;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.card :is(h2,h3,h4,h5,h6):first-child {
+    font-size: 1.5rem;
+}
+
+.card p.subtitle, section span.subtitle{
+    color: var(--white);
+    opacity: 0.4;
+    font-size: 12px;
+    font-weight: 500;
+}
 
 /* button style */
 
@@ -36,7 +79,7 @@ html {
 
 button{
     background-color: transparent;
-    color: var(--Baltic-Sea);
+    color: var(--Iridium);
     font-size: 16px;
     border:none;
     outline: none;
@@ -49,12 +92,28 @@ button{
 }
 
 button.active{
-    background-color: var(--Baltic-Sea);
+    background-color: var(--Iridium);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 0 2px rgba(0, 0, 0, 0.12);
     color: var(--white);
 }
 
 button:hover{
-    background-color: var(--Baltic-Sea);
+    background-color: var(--Iridium);
     color: var(--white);
+}
+
+
+
+
+
+@media screen and (max-width:435px) {
+    
+}
+
+@media screen and (min-width: 435px) and (max-width: 770px) {
+    
+}
+
+@media screen and (min-width: 770px) {
+    
 }
