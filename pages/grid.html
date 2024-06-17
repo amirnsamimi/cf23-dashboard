@@ -20,14 +20,17 @@
   <body>
     <header>
       <div class="icon">
-        <a href="./pages/grid.html" class="row"
-          >Grid System
-          <object data="./assets/icons/right.svg" type="image/svg+xml"></object>
+        <a href="../index.html" class="row"
+          >flex-box
+          <object
+            data="../assets/icons/right.svg"
+            type="image/svg+xml"
+          ></object>
         </a>
       </div>
     </header>
     <main>
-      <section class="card flex justify-between m-16">
+      <section class="card weather-card">
         <div class="flex column justify-between">
           <div>
             <h1>Hello Amir</h1>
@@ -47,7 +50,7 @@
           />
         </div>
       </section>
-      <section class="card date-card grid rgap-16 mx-16">
+      <section class="card date-card">
         <div>
           <h2 class="title">Tuesday, 11 Jun</h2>
           <p class="subtitle">Today’s agenda</p>
@@ -65,7 +68,7 @@
           </ul>
         </div>
       </section>
-      <section class="card email-card m-16">
+      <section class="card email-card">
         <div>
           <h2 class="title">Email Inbox</h2>
           <p class="subtitle">amirnsamimi@gmail.com</p>
@@ -120,20 +123,13 @@
         </div>
       </section>
 
-      <section class="doom-card card mt-16">
+      <section class="doom-card card">
         <div class="row doom-row">
           <ul>
             <li><button class="active">Gaming</button></li>
             <li><button>Technology</button></li>
             <li><button>Crypto</button></li>
           </ul>
-          <a href="../pages/grid.html" class="row"
-            >Grid System
-            <object
-              data="../assets/icons/right.svg"
-              type="image/svg+xml"
-            ></object>
-          </a>
         </div>
         <div class="doom-bannerContainer">
           <img
@@ -148,95 +144,92 @@
           </p>
         </div>
       </section>
-      <div class="multirow-cards">
-        <section class="card quote-card grid my-8">
-          <div>
-            <h2 class="title">Quote of the Daz</h2>
-            <p class="subtitle">Make sure to remember</p>
-          </div>
-          <div>
-            <p>
-              If you can't dazzle them with brilliance, baffle them with
-              bullshit.
-            </p>
-            <span class="subtitle">W.C. Fields</span>
-          </div>
-        </section>
-        <section class="card feeling-card my-8">
-          <div>
-            <h2 class="title">How are you feeling?</h2>
-            <p class="subtitle">Track your mood</p>
-          </div>
-          <div>
-            <ul class="feeling-cardContainer">
-              <li class="feeling-miniCards">
-                <div>
-                  <img
-                    src="../assets/icons/excellent.svg"
-                    alt="Excellent-emoji"
-                  />
-                </div>
-                <div>Excellent</div>
-              </li>
-              <li class="feeling-miniCards">
-                <div>
-                  <img
-                    src="../assets/icons/sleepy.svg"
-                    width="32"
-                    height="32"
-                    alt="Sleepy-emoji"
-                  />
-                </div>
-                <div>Sleepy</div>
-              </li>
-              <li class="feeling-miniCards">
-                <div>
-                  <img
-                    src="../assets/icons/sick.svg"
-                    width="32"
-                    height="32"
-                    alt="Sick-emoji"
-                  />
-                </div>
-                <div>Sick</div>
-              </li>
-              <li class="feeling-miniCards">
-                <div>
-                  <img
-                    src="../assets/icons/hungry.svg"
-                    width="32"
-                    height="32"
-                    alt="hungry-emoji"
-                  />
-                </div>
-                <div>Hungry</div>
-              </li>
-              <li class="feeling-miniCards">
-                <div>
-                  <img
-                    src="../assets/icons/hot.svg"
-                    width="32"
-                    height="32"
-                    alt="hot-emoji"
-                  />
-                </div>
-                <div>Hot</div>
-              </li>
-              <li class="feeling-miniCards">
-                <div>
-                  <img
-                    src="../assets/icons/meh.svg"
-                    width="32"
-                    height="32"
-                    alt="meh-emoji"
-                  />
-                </div>
-                <div>Meh</div>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </div>
+      <section class="card quote-card">
+        <div>
+          <h2 class="title">Quote of the Daz</h2>
+          <p class="subtitle">Make sure to remember</p>
+        </div>
+        <div>
+          <p>
+            If you can't dazzle them with brilliance, baffle them with bullshit.
+          </p>
+          <span class="subtitle">W.C. Fields</span>
+        </div>
+      </section>
+      <section class="card feeling-card section-6">
+        <div>
+          <h2 class="title">How are you feeling?</h2>
+          <p class="subtitle">Track your mood</p>
+        </div>
+        <div>
+          <ul class="feeling-cardContainer">
+            <li class="feeling-miniCards">
+              <div>
+                <img
+                  src="../assets/icons/excellent.svg"
+                  alt="Excellent-emoji"
+                />
+              </div>
+              <div>Excellent</div>
+            </li>
+            <li class="feeling-miniCards">
+              <div>
+                <img
+                  src="../assets/icons/sleepy.svg"
+                  width="32"
+                  height="32"
+                  alt="Sleepy-emoji"
+                />
+              </div>
+              <div>Sleepy</div>
+            </li>
+            <li class="feeling-miniCards">
+              <div>
+                <img
+                  src="../assets/icons/sick.svg"
+                  width="32"
+                  height="32"
+                  alt="Sick-emoji"
+                />
+              </div>
+              <div>Sick</div>
+            </li>
+            <li class="feeling-miniCards">
+              <div>
+                <img
+                  src="../assets/icons/hungry.svg"
+                  width="32"
+                  height="32"
+                  alt="hungry-emoji"
+                />
+              </div>
+              <div>Hungry</div>
+            </li>
+            <li class="feeling-miniCards">
+              <div>
+                <img
+                  src="../assets/icons/hot.svg"
+                  width="32"
+                  height="32"
+                  alt="hot-emoji"
+                />
+              </div>
+              <div>Hot</div>
+            </li>
+            <li class="feeling-miniCards">
+              <div>
+                <img
+                  src="../assets/icons/meh.svg"
+                  width="32"
+                  height="32"
+                  alt="meh-emoji"
+                />
+              </div>
+              <div>Meh</div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
   </body>
 </html>

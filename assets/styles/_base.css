@@ -104,3 +104,7 @@ header div {
   height: 24px;
   object-fit: contain;
 }
+
+main {
+  max-width: 1440px;
+}

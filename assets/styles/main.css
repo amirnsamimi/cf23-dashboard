@@ -48,7 +48,7 @@ button.active {
 
 button:hover {
   background-color: var(--Baltic-Sea);
-  color: var(--white);F
+  color: var(--white);
 }
 
 /* date-card */
@@ -165,7 +165,6 @@ li h3 {
   width: 100%;
   object-fit: cover;
 }
-
 
 .doom-bannerContainer p {
   position: absolute;

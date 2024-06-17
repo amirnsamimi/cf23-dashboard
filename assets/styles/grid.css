@@ -2,7 +2,6 @@
 @import "./_variables.css";
 @import "./_animations.css";
 
-/* cards */
 .card {
   background-color: var(--Iridium);
   color: var(--white);
@@ -51,7 +50,22 @@ button:hover {
   color: var(--white);
 }
 
+/* weather card */
+
+.weather-card {
+  height: 100%;
+  display: flex;
+  grid-area: a;
+  justify-content: space-between;
+}
+
 /* date-card */
+
+.date-card {
+  height: 100%;
+  display: grid;
+  grid-area: b;
+}
 
 .date-card li:first-child {
   border-left: 2px solid var(--safron-mango);
@@ -61,6 +75,8 @@ button:hover {
 }
 
 .date-card li {
+  display: grid;
+  justify-content: space-between;
   padding: 4px 12px;
 }
 
@@ -71,28 +87,32 @@ li h3 {
 
 /* email-card */
 
+.email-card {
+  grid-area: c;
+  height: 100%;
+}
+
 .email-card ul li {
   border-bottom: 1px solid var(--Baltic-Sea);
   padding: 7px 0;
-  width: 100%;
 }
 .email-card ul li div:last-child {
   padding: 6px 12px;
   justify-content: flex-start;
-  width: calc(100% - 40px);
 }
 
 .email-card ul li div h3 {
-  text-overflow: ellipsis;
+  /* text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
-  width: 100%;
+  overflow: hidden; */
 }
 
 /*  Quote Card */
 
 .quote-card {
   row-gap: 29px;
+  grid-area: e;
+  height: 100%;
 }
 
 .quote-card p {
@@ -116,6 +136,8 @@ li h3 {
 /* feeling card */
 
 .feeling-card {
+  height: 100%;
+  grid-area: f;
   display: flex;
   gap: 16px;
   flex-direction: column;
@@ -142,6 +164,7 @@ li h3 {
 
 .doom-card {
   display: none;
+  grid-area: d;
 }
 
 .doom-row {
@@ -228,23 +251,29 @@ li h3 {
   right: 0;
   bottom: 0;
 }
-/* 
+
+main {
+  display: grid;
+  grid-template:
+    "a" 178px
+    "b" 210px
+    "c" 265px
+    "f" 265px
+    "e" auto
+    / 1fr;
+}
+
 @media screen and (min-width: 768px) {
   main {
-    display: flex;
-    gap: 16px;
-  }
-
-  main .container:first-child {
-    width: 32%;
+    display: grid;
+    grid-template:
+      "a d d" 178px
+      "b d d" 210px
+      "c e f" minmax(265px, auto)
+      / 1fr 1fr 1fr;
   }
 
   .doom-card {
     display: block;
   }
-  .multirow-cards {
-    display: flex;
-    gap: 16px;
-    flex-direction: row;
-  }
-} */
+}
