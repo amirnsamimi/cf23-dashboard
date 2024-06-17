@@ -48,7 +48,7 @@ button.active {
 
 button:hover {
   background-color: var(--Baltic-Sea);
-  color: var(--white);F
+  color: var(--white);
 }
 
 /* date-card */
@@ -166,6 +166,25 @@ li h3 {
   object-fit: cover;
 }
 
+.doom-card a {
+  text-decoration: none;
+  color: var(--white);
+  display: flex;
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.icon {
+  fill: pink;
+}
+
+.doom-card a object {
+  height: auto;
+  height: 24px;
+  object-fit: contain;
+}
 
 .doom-bannerContainer p {
   position: absolute;
@@ -209,12 +228,11 @@ li h3 {
   right: 0;
   bottom: 0;
 }
-
+/* 
 @media screen and (min-width: 768px) {
   main {
     display: flex;
     gap: 16px;
-    max-width: 1440px;
   }
 
   main .container:first-child {
@@ -229,4 +247,4 @@ li h3 {
     gap: 16px;
     flex-direction: row;
   }
-}
+} */

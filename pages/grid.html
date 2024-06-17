@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/styles/grid.css" />
+    <title>Dashboard</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="icon">
+        <a href="./pages/grid.html" class="row"
+          >Grid System
+          <object data="./assets/icons/right.svg" type="image/svg+xml"></object>
+        </a>
+      </div>
+    </header>
+    <main>
+      <section class="card flex justify-between m-16">
+        <div class="flex column justify-between">
+          <div>
+            <h1>Hello Amir</h1>
+            <p class="subtitle">Today is mostly sunny</p>
+          </div>
+          <div>
+            <h2 id="degree">29&deg;C</h2>
+            <p class="subtitle">Tehran, Iran</p>
+          </div>
+        </div>
+        <div class="weather-status">
+          <img src="../assets/images/sun.svg" id="sun" alt="mostly-sunny" />
+          <img
+            class="cloud"
+            src="../assets/images/cloud.svg"
+            alt="mostly-sunny"
+          />
+        </div>
+      </section>
+      <section class="card date-card grid rgap-16 mx-16">
+        <div>
+          <h2 class="title">Tuesday, 11 Jun</h2>
+          <p class="subtitle">Today’s agenda</p>
+        </div>
+        <div>
+          <ul class="grid rgap-6">
+            <li>
+              <h3>BB Daily</h3>
+              <p class="subtitle">10:30, Head Office</p>
+            </li>
+            <li>
+              <h3>CodingFront - S10</h3>
+              <p class="subtitle">18:00, Google Meet</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="card email-card m-16">
+        <div>
+          <h2 class="title">Email Inbox</h2>
+          <p class="subtitle">amirnsamimi@gmail.com</p>
+        </div>
+        <div>
+          <ul>
+            <li class="flex items-center">
+              <div class="flex items-center">
+                <img
+                  src="../assets/images/github.svg"
+                  width="48"
+                  height="48"
+                  alt="steam"
+                />
+              </div>
+              <div>
+                <h3>
+                  RoboCop: Rogue City from your Steam wishlist is now on sale!
+                </h3>
+                <p class="subtitle">Steam</p>
+              </div>
+            </li>
+            <li class="flex items-center">
+              <div class="flex items-center">
+                <img
+                  src="../assets/images/steam.svg"
+                  width="48"
+                  height="48"
+                  alt="github"
+                />
+              </div>
+              <div>
+                <h3>Destination: Poolside</h3>
+                <p class="subtitle">Github</p>
+              </div>
+            </li>
+            <li class="flex items-center">
+              <div class="flex items-center">
+                <img
+                  src="../assets/images/h&m.svg"
+                  width="48"
+                  height="48"
+                  alt="h&m"
+                />
+              </div>
+              <div>
+                <h3>Destination: Poolside</h3>
+                <p class="subtitle">H & M</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="doom-card card mt-16">
+        <div class="row doom-row">
+          <ul>
+            <li><button class="active">Gaming</button></li>
+            <li><button>Technology</button></li>
+            <li><button>Crypto</button></li>
+          </ul>
+          <a href="../pages/grid.html" class="row"
+            >Grid System
+            <object
+              data="../assets/icons/right.svg"
+              type="image/svg+xml"
+            ></object>
+          </a>
+        </div>
+        <div class="doom-bannerContainer">
+          <img
+            src="../assets/images/doom.svg"
+            height="320"
+            width="816"
+            alt="doom-image"
+          />
+          <p>
+            Doom Eternal's long-awaited follow-up is a medieval prequel called
+            Doom: The Dark Ages
+          </p>
+        </div>
+      </section>
+      <div class="multirow-cards">
+        <section class="card quote-card grid my-8">
+          <div>
+            <h2 class="title">Quote of the Daz</h2>
+            <p class="subtitle">Make sure to remember</p>
+          </div>
+          <div>
+            <p>
+              If you can't dazzle them with brilliance, baffle them with
+              bullshit.
+            </p>
+            <span class="subtitle">W.C. Fields</span>
+          </div>
+        </section>
+        <section class="card feeling-card my-8">
+          <div>
+            <h2 class="title">How are you feeling?</h2>
+            <p class="subtitle">Track your mood</p>
+          </div>
+          <div>
+            <ul class="feeling-cardContainer">
+              <li class="feeling-miniCards">
+                <div>
+                  <img
+                    src="../assets/icons/excellent.svg"
+                    alt="Excellent-emoji"
+                  />
+                </div>
+                <div>Excellent</div>
+              </li>
+              <li class="feeling-miniCards">
+                <div>
+                  <img
+                    src="../assets/icons/sleepy.svg"
+                    width="32"
+                    height="32"
+                    alt="Sleepy-emoji"
+                  />
+                </div>
+                <div>Sleepy</div>
+              </li>
+              <li class="feeling-miniCards">
+                <div>
+                  <img
+                    src="../assets/icons/sick.svg"
+                    width="32"
+                    height="32"
+                    alt="Sick-emoji"
+                  />
+                </div>
+                <div>Sick</div>
+              </li>
+              <li class="feeling-miniCards">
+                <div>
+                  <img
+                    src="../assets/icons/hungry.svg"
+                    width="32"
+                    height="32"
+                    alt="hungry-emoji"
+                  />
+                </div>
+                <div>Hungry</div>
+              </li>
+              <li class="feeling-miniCards">
+                <div>
+                  <img
+                    src="../assets/icons/hot.svg"
+                    width="32"
+                    height="32"
+                    alt="hot-emoji"
+                  />
+                </div>
+                <div>Hot</div>
+              </li>
+              <li class="feeling-miniCards">
+                <div>
+                  <img
+                    src="../assets/icons/meh.svg"
+                    width="32"
+                    height="32"
+                    alt="meh-emoji"
+                  />
+                </div>
+                <div>Meh</div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

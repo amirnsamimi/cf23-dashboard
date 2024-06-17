@@ -17,6 +17,14 @@
     <title>Dashboard</title>
   </head>
   <body>
+    <header>
+      <div class="icon">
+        <a href="./pages/grid.html" class="row"
+          >Grid System
+          <object data="./assets/icons/right.svg" type="image/svg+xml"></object>
+        </a>
+      </div>
+    </header>
     <main>
       <div class="container">
         <section class="card flex justify-between m-16">
@@ -30,12 +38,12 @@
               <p class="subtitle">Tehran, Iran</p>
             </div>
           </div>
-          <div>
+          <div class="weather-status">
+            <img src="./assets/images/sun.svg" id="sun" alt="mostly-sunny" />
             <img
-              src="./assets/images/Partial-cloudy.svg"
+              class="cloud"
+              src="./assets/images/cloud.svg"
               alt="mostly-sunny"
-              width="150"
-              height="150"
             />
           </div>
         </section>
@@ -114,7 +122,7 @@
       </div>
       <div class="container">
         <section class="doom-card card mt-16">
-          <div>
+          <div class="row doom-row">
             <ul>
               <li><button class="active">Gaming</button></li>
               <li><button>Technology</button></li>
